@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/mobie.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="CSS/color.css">
+    <link rel="stylesheet" href="CSS/element.css">
+    <link rel="stylesheet" href="CSS/food.css">
+    <script src="JS/show.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/menu-json.js"></script>
+</head>
+<body>
+        <nav>
+        <div class="menu-nav-box">
+            <div class="menu-nav">
+                <a href="index.html">Trang Chủ</a>
+                <a href="about.html">Giới Thiệu</a>
+                <a href="menu.html">Menu</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="mobile-nav">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu-box">
+        <div class="menu-close" id="menu-close">×</div>
+            <nav class="menu-nav">
+                <a href="index.html">Trang Chủ</a>
+                <a href="about.html">Giới Thiệu</a>
+                <a href="menu.html">Thực đơn</a>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <div class="tieu-de">
+            <h1>THỰC ĐƠN</h1>
+            <h2><span style="color:#ffb703">Chơi hội</span> thỏa thích. <span style="color: #fb8500;">Ăn ngon</span> hết mình.</h2>
+        </div>
+    </div>
+
+    <div class="food-section" id="menu-container">
+        <div class="food-color-card">
+            <h2>Xuân này bạn có gì bỏ bụng chưa?</h2>
+            <p style="opacity: 0.8;">Thực đơn đa dạng, phong phú và hấp dẫn. Đừng để cái bụng đói biểu tình nhé! 🍗</p>
+            <p>(Hình ảnh chỉ mang tính chất minh họa)</p>
+            <hr>
+            <h1>Món nổi bật</h1>
+            <div class="food-container">
+                <div class="food-box-menu">
+                    <img src="img/changa.jpg" alt="Chân gà sả tắc">
+                    <div class="food-info">
+                        <strong>Chân gà sả tắc</strong>
+                        <p>Giòn rụm, thơm nồng mùi sả. Cảm nhận vị chua cay kết hợp với ngọt trên đầu lưỡi. Đọng lại dư âm của sự tươi mát</p>
+                        <span class="price">70.000 VND</span>
+                        <br><br>
+                        <button class="button-border read-more-btn" data-id="1">Đọc thêm</button>
+                    </div>
+                </div>
+                
+                <div class="food-box-menu">
+                    <img src="img/khoai-tay.jpg" alt="Khoai tây chiên">
+                    <div class="food-info">
+                        <strong>Khoai tây chiên</strong>
+                        <p>Từng miếng khoai vàng ươm, giòn tan, thơm lừng mùi khoai tây tươi. Vị mặn nhẹ hoà quyện cùng vị ngọt tự nhiên, ấm nóng ngay tay - ăn là mê!</p>
+                        <span class="price">20.000 VND</span>
+                        <br><br>
+                        <button class="button-border read-more-btn" data-id="2" >Đọc thêm</button>
+                    </div>
+                </div>
+
+                <div class="food-box-menu">
+                    <img src="img/떡볶이.jpg" alt="Đặc sản Hàn Quốc">
+                    <div class="food-info">
+                        <strong>Bánh Gạo Cay Hàn Quốc (tteok-bokki)</strong>
+                        <p>Hương vị Hàn Quốc gói gọn trong đĩa Tokbokki: Bánh gạo dai dẻo, sốt cay ngọt đậm đà, chuẩn vị Hàn Lưu. Ăn là dính!</p>
+                        <span class="price">15.000 VND</span>
+                        <br><br>
+                        <button class="button-border read-more-btn" data-id="3" >Đọc thêm</button>
+                    </div>
+                </div>
+            </div>
+            <h1>Ăn ngon sao thiếu được đồ uống?</h1>
+            <div class="food-container">
+                <div class="food-box-menu">
+                    <img src="img/milk-tea.jpg" alt="Đặc sản Hàn Quốc">
+                    <div class="food-info">
+                        <strong>Trà sữa</strong>
+                        <p>Trà sữa thơm ngon, đậm đà vị sữa và trà. Mùi vị đặc trưng của trà sữa truyền thống, dễ uống và dễ chịu.</p>
+                        <span class="price">15.000 VND</span>
+                        <br><br>
+                        <button class="button-border read-more-btn" data-id="4" >Đọc thêm</button>
+                    </div>
+                </div>
+
+                <div class="food-box-menu">
+                    <img src="img/tea.jpg" alt="Trà">
+                    <div class="food-info">
+                        <strong>Trà</strong>
+                        <p>Trà thơm ngon, đậm đà vị trà. Mùi vị đặc trưng của trà, dễ uống và dễ chịu.</p>
+                        <span class="price">25.000 VND</span>
+                        <br><br>
+                        <button class="button-border read-more-btn" data-id="5" >Đọc thêm</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="readmore-content" id="readmore-content">
+        <div class="content">
+            <div class="readmore-box" id="readmore-box">
+                <div class="readmore-close" id="readmore-close">×</div>
+                <div class="readmore-details" id="readmore-details">
+                    <h1>Thông tin chi tiết</h1>
+                    <img src="img/tet.jpg" alt="" class="img" id="img-food">
+                    <h2 id="name-food">Món A</h2>
+                    <h3 id="price-food" style="color: green;">1,000 VND</h3>
+                    <p id="description-food">Mô tả món A</p>
+                    <button class="button-border" id="close-readmore-btn">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="tieu-de">
+            <h1>Khám phá thêm</h1>
+        </div>
+        
+    </div>
+</body>
+</html>
