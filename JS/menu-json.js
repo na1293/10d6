@@ -30,7 +30,7 @@ const menuData = [
     {
         "id": 5,
         "name": "Trà",
-        "price": 25000,
+        "price": 20000,
         "image": "img/tea.jpg",
         "description": "Trà thơm ngon, đậm đà vị trà. Mùi vị đặc trưng của trà, dễ uống và dễ chịu."
     }
