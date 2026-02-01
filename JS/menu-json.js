@@ -17,7 +17,7 @@ const menuData = [
         "id": 3,
         "name": "Bánh Gạo Cay Hàn Quốc (tteok-bokki)",
         "price": 15000,
-        "image": "img/떡볶이.jpg",
+        "image": "img/toppoki.jpg",
         "description": "Hương vị Hàn Quốc gói gọn trong đĩa Tokbokki: Bánh gạo dai dẻo, sốt cay ngọt đậm đà, chuẩn vị Hàn Lưu. Ăn là dính! (Bạn sẽ nhận được: Toppoki) \n Chỉ Toppoki"
     },
     {
