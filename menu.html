@@ -15,7 +15,7 @@
     <script src="JS/menu-json.js" defer></script>
 </head>
 <body>
-        <nav>
+    <nav>
         <div class="menu-nav-box">
             <div class="menu-nav">
                 <a href="index.html">Trang Chủ</a>
@@ -42,6 +42,17 @@
             </nav>
         </div>
     </div>
+
+    <button class="menu-button" id="menu-button">Xem thực đơn</button>
+
+    <div class="content">
+        <div class="menu-order">
+            <div class="menu-order-close" id="menu-order-close">×</div>
+            <a href="#featured"><h3>Món ăn nổi bật</h3></a>
+            <a href="#drink"><h3>Đồ uống</h3></a>
+        </div>
+    </div>
+
     <div class="content">
         <div class="tieu-de">
             <h1>THỰC ĐƠN</h1>
@@ -55,7 +66,9 @@
             <p style="opacity: 0.8;">Thực đơn đa dạng, phong phú và hấp dẫn. Đừng để cái bụng đói biểu tình nhé! 🍗</p>
             <p>(Hình ảnh chỉ mang tính chất minh họa)</p>
             <hr>
-            <h1>Món nổi bật</h1>
+            <section id="featured">
+                <h1>Món nổi bật</h1>
+            </section>
             <div class="food-container">
                 <div class="food-box-menu">
                     <img src="img/changa.jpg" loading="lazy" loading="lazy" loading="lazy" loading="lazy" alt="Chân gà sả tắc">
@@ -90,7 +103,9 @@
                     </div>
                 </div>
             </div>
-            <h1>Ăn ngon sao thiếu được đồ uống?</h1>
+            <section id="drink">
+                <h1>Ăn ngon sao thiếu được đồ uống?</h1>
+            </section>
             <div class="food-container">
                 <div class="food-box-menu">
                     <img src="img/milk-tea.jpg" loading="lazy" loading="lazy" loading="lazy" loading="lazy" alt="Đặc sản Hàn Quốc">
@@ -157,8 +172,8 @@
                 <img src="img/tet.jpg" loading="lazy" loading="lazy" loading="lazy">
             </div>
 
-            <button class="prev">Prev</button>
-            <button class="next">Next</button>
+            <button class="prev"><</button>
+            <button class="next">></button>
         </div>
     </div>
 

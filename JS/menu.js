@@ -15,4 +15,30 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    const menu_button = document.getElementById('menu-button');
+    const menu_order = document.querySelector('.menu-order');
+    const menu_order_close = document.getElementById('menu-order-close');
+    menu_button?.addEventListener('click', () => {
+        menu_order.classList.toggle('active');
+    });
+
+    menu_order_close?.addEventListener('click', () => {
+        menu_order.classList.remove('active');
+    });
+
+    document.querySelectorAll('.menu-order a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const target = document.querySelector(link.getAttribute('href'));
+            if (!target) return;
+
+            target.scrollIntoView({ behavior: 'smooth' });
+
+            // tự đóng menu
+            document.querySelector('.menu-order').classList.remove('active');
+        });
+    });
+
+
 });
