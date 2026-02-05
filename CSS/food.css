@@ -1,4 +1,6 @@
+
 .readmore-content {
+    overflow: hidden;
     position: fixed;
     inset: 0;
     display: none;
@@ -7,6 +9,7 @@
     background: rgba(0,0,0,0.6);
     padding: 12px;
     z-index: 1001;
+    height: 100%;
 }
 
 /* ================= POPUP BOX ================= */
@@ -139,6 +142,7 @@
     font-size: 28px;
     color: #1d1d1f;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .menu-button {
@@ -152,7 +156,7 @@
     border-radius: 30px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 1000;
+    z-index: 999;
     font-size: 16px;
 }
 
@@ -164,16 +168,33 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    z-index: 1000;
+    z-index: 999;
     background: rgba(255, 255, 255, 0.85);
     box-shadow:
-    0 12px 30px rgba(255, 122, 24, 0.35),
-    0 6px 14px rgba(255, 61, 0, 0.25);
-    height: 90%;
-    width: 100%;
-    justify-content: center;
+        0 12px 30px rgba(255, 122, 24, 0.35),
+        0 6px 14px rgba(255, 61, 0, 0.25);
+    
+    /* CHỈNH SỬA CÁC DÒNG DƯỚI ĐÂY */
+    height: 65vh; /* Sử dụng vh cho chuẩn chiều cao màn hình */
+    width: 100%;   /* Đừng để 100% nếu muốn thấy cái shadow đẹp */
+    max-width: 400px; /* Giới hạn độ rộng để nhìn cho sang */
+    
+    justify-content: flex-start; /* Để nội dung bắt đầu từ đỉnh */
     align-items: center;
     border-radius: 16px;
+    
+    overflow-y: auto;  /* Cho phép cuộn */
+    padding: 60px 0;   /* Tạo khoảng trống để không dính sát mép trên/dưới */
+}
+
+.menu-order::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu-order::-webkit-scrollbar-thumb {
+    background: rgba(255, 122, 24, 1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .menu-order {

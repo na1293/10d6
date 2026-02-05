@@ -33,5 +33,19 @@ const menuData = [
         "price": 20000,
         "image": "img/tea.jpg",
         "description": "Trà thơm ngon, đậm đà vị trà. Mùi vị đặc trưng của trà, dễ uống và dễ chịu."
+    },
+    {
+        "id": 6,
+        "name": "Matcha Latte",
+        "price": 25000,
+        "image": "img/matcha-latte.jpg",
+        "description": "Matcha Latte thơm ngon, đậm đà vị matcha. Mùi vị đặc trưng của matcha, giúp thư giãn và sảng khoái."
+    },
+    {
+        "id": 7,
+        "name": "Bánh Mochi",
+        "price": 15000,
+        "image": "img/mochi.jpg",
+        "description": "Bánh mochi mềm mịn, có vị ngọt thanh. Mùi vị đặc trưng của mochi, giúp thư giãn và sảng khoái."
     }
 ];

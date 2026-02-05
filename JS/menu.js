@@ -1,29 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.getElementById('menu-toggle'); // Nút mở menu (ba gạch)
-    const menu = document.getElementById('menu-box'); // Toàn bộ phần overlay menu
-    const closeButton = document.getElementById('menu-close'); // Nút đóng menu (dấu X)
+
+    /* ===== MENU CHÍNH ===== */
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu-box');
+    const closeButton = document.getElementById('menu-close');
 
     if (toggle && menu) {
         toggle.addEventListener('click', () => {
-            menu.classList.toggle('active'); // Thêm/bỏ class 'active' để hiện/ẩn menu
+            const isActive = menu.classList.toggle('active');
+            document.body.classList.toggle('no-scroll', isActive);
         });
     }
 
     if (closeButton && menu) {
         closeButton.addEventListener('click', () => {
-            menu.classList.remove('active'); // Khi bấm nút đóng, xóa class 'active' để ẩn menu
+            menu.classList.remove('active');
+            document.body.classList.remove('no-scroll');
         });
     }
 
+    /* ===== MENU ORDER ===== */
     const menu_button = document.getElementById('menu-button');
     const menu_order = document.querySelector('.menu-order');
     const menu_order_close = document.getElementById('menu-order-close');
+
     menu_button?.addEventListener('click', () => {
-        menu_order.classList.toggle('active');
+        menu_order.classList.add('active');
+        document.body.classList.add('no-scroll');
     });
 
     menu_order_close?.addEventListener('click', () => {
         menu_order.classList.remove('active');
+        document.body.classList.remove('no-scroll');
     });
 
     document.querySelectorAll('.menu-order a').forEach(link => {
@@ -35,10 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             target.scrollIntoView({ behavior: 'smooth' });
 
-            // tự đóng menu
-            document.querySelector('.menu-order').classList.remove('active');
+            // đóng menu & mở lại scroll
+            menu_order.classList.remove('active');
+            document.body.classList.remove('no-scroll');
         });
     });
-
 
 });
