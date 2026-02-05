@@ -50,3 +50,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('readmore-content');
+    const closeBtn = document.getElementById('close-readmore-btn');
+    const closeIcon = document.getElementById('readmore-close');
+
+    // Mở popup
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const id = button.getAttribute('data-id');
+            const item = menuData.find(m => m.id == id);
+            
+            if (item) {
+                document.getElementById('img-food').src = item.image;
+                document.getElementById('name-food').innerText = item.name;
+                document.getElementById('price-food').innerText = item.price.toLocaleString() + " VND";
+                document.getElementById('description-food').innerText = item.description;
+                modal.style.display = 'flex';
+                document.body.classList.add('no-scroll');
+            }
+        });
+    });
+
+    // Đóng popup
+    [closeBtn, closeIcon].forEach(el => {
+        el?.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+        });
+    });
+});

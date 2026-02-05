@@ -59,7 +59,6 @@
     
     /* Overlay menu */
     .menu-overlay {
-        overflow-y: hidden;
         position: fixed;
         top: 0;
         right: 0;
