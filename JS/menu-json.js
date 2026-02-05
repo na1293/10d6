@@ -49,3 +49,4 @@ const menuData = [
         "description": "Bánh mochi mềm mịn, có vị ngọt thanh. Mùi vị đặc trưng của mochi, giúp thư giãn và sảng khoái."
     }
 ];
+console.log("Hello World")
