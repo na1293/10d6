@@ -82,7 +82,7 @@
     color: #333;
     word-break: break-word;    /* không vỡ layout với text dài */
     white-space: pre-line;
-    max-height: 100px;      /* giới hạn chiều cao */
+    max-height: 70px;      /* giới hạn chiều cao */
     overflow-y: auto;       /* cho vuốt dọc */
 }
 
