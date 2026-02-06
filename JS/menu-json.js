@@ -54,5 +54,19 @@ const menuData = [
         "price": 13000,
         "image": "img/kimbap.jpg",
         "description": "Từng khoanh Kimbap hiện ra với lớp rong biển đen bóng nhờ một lớp dầu mè thơm nức mũi. Chỉ cần cắn nhẹ, lớp cơm dẻo trắng ngần sẽ tan ra, để lộ phần nhân \"full topping\" cực bắt mắt: trứng cuộn vàng óng béo ngậy, xúc xích đậm đà, cùng củ cải muối giòn tan sần sật.\nVị ngọt của cà rốt và thanh mát của dưa leo hòa quyện hoàn hảo với cái bùi bùi của hạt mè rang, tạo nên một cú \"bùng nổ\" hương vị trong khoang miệng. Cảm giác vừa đậm đà, vừa thanh nhẹ, ăn một miếng là chỉ muốn làm thêm miếng thứ hai, thứ ba... không dừng lại được! 🍱🥢"
+    },
+    {
+        "id": 9,
+        "name": "Tào phớ",
+        "price": 10000,
+        "image": "img/dau-hu.jpg",
+        "description": "Tào phớ mềm mịn, có vị ngọt thanh. Mùi vị đặc trưng của tào phớ, giúp thư giãn và sảng khoái."
+    },
+    {
+        "id": 10,
+        "name": "Nem chua rán",
+        "price": 28000,
+        "image": "img/nem-chua.jpg",
+        "description": "Nem chua giòn rụm, thơm lừng mùi ớt và gia vị. Vị cay nồng kết hợp với vị béo ngậy của nem tạo nên sự hài hòa tuyệt vời."
     }
 ];

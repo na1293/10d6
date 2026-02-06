@@ -79,6 +79,10 @@
 
 }
 
+.can-le {
+    text-align: justify;
+    }
+
 .text-2-mau {
   /* Tạo dải màu từ trái sang phải */
   background: linear-gradient(to right, gold, #feb47b);

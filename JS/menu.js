@@ -59,10 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mở popup
     document.querySelectorAll('.read-more-btn').forEach(button => {
         button.addEventListener('click', () => {
-            const buttonId = button.getAttribute('data-id'); // Lấy id từ nút (luôn là string)
-            
-            // Tìm item: Ép cả 2 về String để so sánh cho chắc kèo
-            const item = menuData.find(m => String(m.id) === String(buttonId));
+            const id = button.getAttribute('data-id');
+            const item = menuData.find(m => m.id == id);
             
             if (item) {
                 document.getElementById('img-food').src = item.image;
@@ -71,8 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('description-food').innerText = item.description;
                 modal.style.display = 'flex';
                 document.body.classList.add('no-scroll');
-            } else {
-                console.error("Không tìm thấy món có ID:", buttonId);
             }
         });
     });
