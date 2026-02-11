@@ -54,9 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (index === 0) {
             title_hero.innerText = "Chào mừng đến với Hội Trợ Xuân!";
             p_hero.innerText = "Theo dõi chúng mình làm những chiếc bánh chưng ngon khó cưỡng trong cuộc thi nhé!";
-        } else {
+        } else if (index === 1) {
             title_hero.innerText = "Trải nghiệm ẩm thực đặc sắc!";
             p_hero.innerText = "Khám phá các món ăn truyền thống và hiện đại tại Hội Trợ Xuân.";
+        } else if (index === 2) {
+            title_hero.innerText = "Khám phá ưu đãi hấp dẫn";
+            p_hero.innerText = "Ưu đãi hấp dẫn dành cho bạn. Đừng bỏ lỡ!";
         }
     }
 
